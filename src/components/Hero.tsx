@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { ChevronRight, Play } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronRight, Play, X } from "lucide-react";
 
 export default function Hero() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Face Scan Effect */}
@@ -54,7 +56,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 text-white font-bold text-lg hover:bg-blue-500 transition-all flex items-center justify-center gap-2 group shadow-xl shadow-blue-600/20 active:scale-95">
+            <button 
+              onClick={() => setIsVideoOpen(true)}
+              className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 text-white font-bold text-lg hover:bg-blue-500 transition-all flex items-center justify-center gap-2 group shadow-xl shadow-blue-600/20 active:scale-95"
+            >
               Explore Platform
               <ChevronRight className="group-hover:translate-x-1 transition-transform" />
             </button>
@@ -97,6 +102,37 @@ export default function Hero() {
           <div className="w-1 h-2 bg-slate-500 rounded-full" />
         </div>
       </motion.div>
+      {/* Video Modal */}
+      <AnimatePresence>
+        {isVideoOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          >
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+            >
+              <X size={32} />
+            </button>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative w-full max-w-5xl aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black"
+            >
+              <video
+                src="/videos/platform_video.mov"
+                autoPlay
+                controls
+                className="w-full h-full"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
