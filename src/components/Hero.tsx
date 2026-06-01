@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight, Play, X } from "lucide-react";
+import { ChevronRight, Download, Play, X } from "lucide-react";
 
 export default function Hero() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -63,10 +63,13 @@ export default function Hero() {
               Explore Platform
               <ChevronRight className="group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="w-full sm:w-auto px-8 py-4 rounded-full glass border-white/10 text-white font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2 active:scale-95">
-              <Play size={20} fill="currentColor" />
-              Request Demo
-            </button>
+            <a
+              href="#downloads"
+              className="w-full sm:w-auto px-8 py-4 rounded-full glass border-white/10 text-white font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2 active:scale-95 text-center"
+            >
+              <Download size={20} />
+              Download App
+            </a>
           </div>
         </motion.div>
 

@@ -23,10 +23,13 @@ export default function Contact() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-               <button className="w-full sm:w-auto px-10 py-4 rounded-2xl bg-white text-deep-blue font-black text-lg hover:bg-slate-200 transition-all flex items-center justify-center gap-2 group">
-                  Request Demo
+               <a
+                  href="#downloads"
+                  className="w-full sm:w-auto px-10 py-4 rounded-2xl bg-white text-deep-blue font-black text-lg hover:bg-slate-200 transition-all flex items-center justify-center gap-2 group text-center"
+               >
+                  Download App
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-               </button>
+               </a>
                <button className="w-full sm:w-auto px-10 py-4 rounded-2xl border border-white/20 text-white font-bold text-lg hover:bg-white/5 transition-all flex items-center justify-center gap-2">
                   <MessageSquare size={20} />
                   Collaborate With Us

@@ -55,9 +55,12 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full" />
             </Link>
           ))}
-          <button className="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 active:scale-95">
-            Request Demo
-          </button>
+          <a
+            href="#downloads"
+            className="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 active:scale-95 text-center"
+          >
+            Download
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -88,9 +91,13 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <button className="w-full py-3 rounded-xl bg-blue-600 text-white font-semibold">
-              Request Demo
-            </button>
+            <a
+              href="#downloads"
+              className="w-full py-3 rounded-xl bg-blue-600 text-white font-semibold text-center"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Download
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
