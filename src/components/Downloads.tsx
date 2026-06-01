@@ -133,9 +133,9 @@ export default function Downloads() {
                 )}
               >
                 {/* Background glowing gradient tailored for each card */}
-                <div className={cn("absolute inset-0 bg-gradient-to-br opacity-40 transition-opacity duration-500", platform.color)} />
+                <div className={cn("absolute inset-0 bg-gradient-to-br opacity-40 transition-opacity duration-500 pointer-events-none", platform.color)} />
 
-                <div>
+                <div className="relative z-10">
                   {/* Recommended Badge */}
                   {isRecommended && (
                     <div className="absolute top-6 right-6 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-bold flex items-center gap-1 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
@@ -164,7 +164,7 @@ export default function Downloads() {
                   download={platform.downloadLink.split("/").pop()}
                   onClick={(e) => handleDownload(e, platform.downloadLink)}
                   className={cn(
-                    "w-full py-4 px-6 rounded-2xl text-center font-bold transition-all flex items-center justify-center gap-2 shadow-lg active:scale-95 group/btn",
+                    "w-full py-4 px-6 rounded-2xl text-center font-bold transition-all flex items-center justify-center gap-2 shadow-lg active:scale-95 group/btn relative z-10",
                     isRecommended
                       ? "bg-blue-600 hover:bg-blue-500 text-white shadow-blue-600/20"
                       : "bg-white/5 hover:bg-white/10 border border-white/10 text-white hover:text-white"
