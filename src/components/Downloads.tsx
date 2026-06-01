@@ -18,6 +18,17 @@ interface PlatformCard {
 export default function Downloads() {
   const [detectedOS, setDetectedOS] = useState<"windows" | "macos" | "linux" | null>(null);
 
+  const handleDownload = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const fileName = href.split("/").pop() || "SUDARSHAN_AI.zip";
+    const link = document.createElement("a");
+    link.href = href;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       const ua = window.navigator.userAgent.toLowerCase();
@@ -151,6 +162,7 @@ export default function Downloads() {
                 <a
                   href={platform.downloadLink}
                   download={platform.downloadLink.split("/").pop()}
+                  onClick={(e) => handleDownload(e, platform.downloadLink)}
                   className={cn(
                     "w-full py-4 px-6 rounded-2xl text-center font-bold transition-all flex items-center justify-center gap-2 shadow-lg active:scale-95 group/btn",
                     isRecommended
