@@ -150,7 +150,7 @@ export default function Downloads() {
                 {/* Direct Download Button */}
                 <a
                   href={platform.downloadLink}
-                  download
+                  download={platform.downloadLink.split("/").pop()}
                   className={cn(
                     "w-full py-4 px-6 rounded-2xl text-center font-bold transition-all flex items-center justify-center gap-2 shadow-lg active:scale-95 group/btn",
                     isRecommended
