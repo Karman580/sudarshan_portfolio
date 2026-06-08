@@ -100,7 +100,7 @@ export default function Downloads() {
                 title: "Software Package",
                 desc: "Complete SUDARSHAN AI distribution package (Password Protected)",
                 icon: <FileArchive className="w-8 h-8 text-blue-400" />,
-                link: "/downloads/SUDARSHAN_AI_Software_Package.zip",
+                link: "https://github.com/Karman580/sudarshan_portfolio/releases/download/v1.0.0/SUDARSHAN_AI_Software_Package.zip",
                 btnText: "Download Package",
                 color: "from-blue-500/10 to-transparent",
                 btnColor: "bg-blue-600 hover:bg-blue-500 text-white shadow-blue-600/20"
