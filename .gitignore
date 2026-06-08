@@ -40,3 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .npm-cache
+
+# large assets
+/public/downloads/*.zip
+/public/downloads/*.dmg
