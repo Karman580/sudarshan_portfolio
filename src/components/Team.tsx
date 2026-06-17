@@ -25,7 +25,7 @@ export default function Team() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl font-bold text-white mb-4">Meet The <span className="text-blue-500">Mindset</span></h2>
-          <p className="text-slate-400">The visionary researchers and engineers behind Sudarshan AI.</p>
+          <p className="text-slate-400">The visionary researchers and engineers behind Sudarshan.</p>
         </div>
 
         {/* Inventors */}

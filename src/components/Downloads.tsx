@@ -34,7 +34,7 @@ export default function Downloads() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Get <span className="text-blue-500">SUDARSHAN AI</span>
+            Get <span className="text-blue-500">SUDARSHAN</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ export default function Downloads() {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">Important Licensing Information</h3>
                 <p className="text-slate-300 mb-4 font-medium">
-                  SUDARSHAN AI is licensed solely for academic and research purposes. Redistribution, sharing, sublicensing, hosting, or distribution without prior written permission is strictly prohibited.
+                  SUDARSHAN is licensed solely for academic and research purposes. Redistribution, sharing, sublicensing, hosting, or distribution without prior written permission is strictly prohibited.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                   {[
@@ -70,7 +70,7 @@ export default function Downloads() {
                     "Proper citation is mandatory.",
                     "Redistribution without permission is prohibited.",
                     "Modification is permitted only with proper attribution and citation.",
-                    "Intellectual Property Rights remain with CoDSAI and the Vision & Signal Information Processing Research Group, TIET.",
+                    "Intellectual Property Rights remain with CoDSAI and the Visual Signal and Information Processing Research Group, TIET.",
                     "Patent rights belong to TIET Patiala."
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
@@ -98,7 +98,7 @@ export default function Downloads() {
             {[
               {
                 title: "Software Package",
-                desc: "Complete SUDARSHAN AI distribution package (Password Protected)",
+                desc: "Complete Sudarshan-beta version distribution package (Password Protected)",
                 icon: <FileArchive className="w-8 h-8 text-blue-400" />,
                 link: "https://github.com/Karman580/sudarshan_portfolio/releases/download/v1.0.0/SUDARSHAN_AI_Software_Package.zip",
                 btnText: "Download Package",

@@ -36,10 +36,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="relative w-10 h-10 flex items-center justify-center">
-             <Image src="/images/logo.png" alt="Sudarshan AI Logo" width={40} height={40} className="rounded-lg shadow-lg shadow-blue-500/20" />
+             <Image src="/images/logo.png" alt="Sudarshan Logo" width={40} height={40} className="rounded-lg shadow-lg shadow-blue-500/20" />
           </div>
-          <span className="text-xl font-bold tracking-tighter text-white">
-            SUDARSHAN <span className="text-blue-500 underline decoration-blue-500/30 underline-offset-4">AI</span>
+          <span className="text-xl font-bold tracking-tighter text-white flex items-center gap-2">
+            SUDARSHAN
+            <span className="text-[10px] font-bold bg-blue-500/10 border border-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full uppercase tracking-wider">
+              Beta
+            </span>
           </span>
         </Link>
 

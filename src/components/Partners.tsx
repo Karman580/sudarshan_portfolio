@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 
 const partners = [
   { name: "TIET", role: "Sponsor" },
-  { name: "Samsung India", role: "Partner" },
-  { name: "IIT BHU", role: "Partner" },
   { name: "UoQ", role: "Stakeholder" },
 ];
 

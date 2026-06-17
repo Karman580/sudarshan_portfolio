@@ -44,15 +44,20 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
-            Pioneering Digital Trust
-          </span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest">
+              Pioneering Digital Trust
+            </span>
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-400 text-xs font-bold uppercase tracking-widest">
+              Sudarshan-beta version
+            </span>
+          </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tight text-white mb-8 leading-[1.1]">
             Detect the <span className="text-gradient">Fake</span>.<br />
             Protect the <span className="text-blue-500">Real</span>.
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10 leading-relaxed">
-            Sudarshan AI provides industry-leading deepfake detection and identity verification for a safer digital world. Secure your platform with real-time AI processing.
+            Sudarshan provides industry-leading deepfake detection and identity verification for a safer digital world. Secure your platform with real-time AI processing.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

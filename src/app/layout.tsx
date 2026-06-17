@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sudarshan AI | Detect the Fake. Protect the Real.",
+  title: "Sudarshan | Detect the Fake. Protect the Real.",
   description: "Advanced AI-powered deepfake detection & identity verification system for secure digital platforms.",
   keywords: ["deepfake detection", "identity verification", "Aadhaar verification", "AI security", "fraud prevention"],
-  authors: [{ name: "Sudarshan AI Team" }],
+  authors: [{ name: "Sudarshan Team" }],
 };
 
 export default function RootLayout({

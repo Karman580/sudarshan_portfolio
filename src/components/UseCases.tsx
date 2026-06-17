@@ -35,7 +35,7 @@ export default function UseCases() {
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">Versatile <span className="text-blue-500">Applications</span></h2>
             <p className="text-slate-400 text-lg mb-8">
-              Sudarshan AI is designed to integrate seamlessly into existing workflows across various industries, providing a robust layer of digital security.
+              Sudarshan is designed to integrate seamlessly into existing workflows across various industries, providing a robust layer of digital security.
             </p>
             <button className="px-8 py-3 rounded-xl border border-white/10 hover:bg-white/5 text-white transition-all">
               View All Industries
