@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import { User, Mail, Globe } from "lucide-react";
 
 const team = {
-  inventors: [
-    { name: "Suresh Raikwar", role: "Co-Inventor" },
-    { name: "Mashhuda Glencross", role: "Co-Inventor" },
+  leadership: [
+    { name: "Dr. Suresh Raikwar", role: "Director" },
+    { name: "Dr. Mashhuda Glencross", role: "Academic Advisor" },
+    { name: "Dr. Priyanka Singh", role: "Academic Advisor" },
   ],
   developers: [
     { name: "Nikhil", role: "Core Developer" },
@@ -28,11 +29,11 @@ export default function Team() {
           <p className="text-slate-400">The visionary researchers and engineers behind Sudarshan.</p>
         </div>
 
-        {/* Inventors */}
+        {/* Leadership */}
         <div className="mb-20">
-          <h3 className="text-xl font-bold text-slate-500 uppercase tracking-widest text-center mb-10">Inventors</h3>
+          <h3 className="text-xl font-bold text-slate-500 uppercase tracking-widest text-center mb-10">Leadership & Advisors</h3>
           <div className="flex flex-wrap justify-center gap-8">
-            {team.inventors.map((member) => (
+            {team.leadership.map((member) => (
               <TeamCard key={member.name} member={member} />
             ))}
           </div>
